@@ -1,0 +1,24 @@
+- name: Check dell pwoerstate
+  hosts: idrac
+  connection: local
+  gather_facts: no
+  vars:
+    idrac_user: "root"
+    idrac_password: ""
+    pwrstate: "On"  
+  tasks:
+    - name: Dell powerstate check
+      dellemc.openmanage.redfish_powerstate:
+        validate_certs: False
+        baseuri: "{{ idrac_ip }}"
+        username: "{{ idrac_user }}"
+        password: "{{ idrac_password }}"
+        reset_type: "{{ pwrstate }}"
+      register: results
+
+    - name: Display results
+      debug:
+        var: results
+
+
+
