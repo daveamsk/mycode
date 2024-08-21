@@ -1,0 +1,10 @@
+assert:
+  that:
+    - "'Chicago' in results.redfish_facts.system.entries[0][1].AssetTag"
+  success_msg: "Confirmed a Chicago asset"
+
+assert:
+  that:
+    - results.redfish_facts.system.entries[0][1].Model == "3500"
+  success_msg: "Confrimed model 3500"
+  fail_msg: "This does not appear to be a model 3500. Aborting."
