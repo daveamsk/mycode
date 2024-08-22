@@ -1,0 +1,32 @@
+{
+    "changed": false,
+    "failed": false,
+    "redfish_facts": {
+        "chassis": {
+            "entries": [
+                {
+                    "AssetTag": "",
+                    "ChassisType": "Rack",
+                    "Id": "System.Embedded.1",
+                    "IndicatorLED": "Blinking",
+                    "Manufacturer": "Dell Inc.",
+                    "Model": "PowerEdge R630",
+                    "Name": "Computer System Chassis",
+                    "PartNumber": "0CNCJWA08",
+                    "SerialNumber": "CN7475157G0374"
+                },
+                {
+                    "AssetTag": "",
+                    "ChassisType": "Enclosure",
+                    "Id": "Enclosure.Internal.0-1:RAID.Integrated.1-1",
+                    "Manufacturer": null,
+                    "Model": "BP13G+EXP 0:1",
+                    "Name": "BP13G+EXP 0:1",
+                    "PartNumber": null,
+                    "SerialNumber": null
+                }
+            ],
+            "ret": true
+        }
+    }
+}
